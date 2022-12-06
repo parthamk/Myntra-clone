@@ -85,19 +85,20 @@ export const fullArr = [
 
 export const gendArr = [
     {
-        value: 'male',
-        lable: 'Male'
+        value: 'men',
+        lable: 'Men'
     },
     {
-        value: 'female',
-        lable: 'Female'
+        value: 'women',
+        lable: 'Women'
     }, {
-        value: 'boys',
-        lable: 'Boys'
-    }, {
-        value: 'girls',
-        lable: 'Girls'
-    },
+        value: 'kids',
+        lable: 'Kids'
+    }, 
+    // {
+    //     value: 'girls',
+    //     lable: 'Girls'
+    // },
 ]
 
 export const priceArr = [

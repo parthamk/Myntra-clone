@@ -61,19 +61,20 @@ function FilterProducts() {
 
     return (
         <>
-            {/* <p
-                style={{ fontSize: '23px', fontWeight: 'bold', marginBottom: '25px', paddingLeft: '15px', marginTop: '20px' }}
-                className=' d-flex justify-content-start'
-            >Myntra Fashion store</p> */}
             <div className='d-flex'>
+                {/* <p
+                    style={{ fontSize: '23px', fontWeight: 'bold', marginBottom: '25px', paddingLeft: '15px', marginTop: '20px' }}
+                    className=' d-flex justify-content-start'
+                >Myntra Fashion store</p> */}
+
                 <div className='col-3'
-                    style={{ textAlign: 'left' }}>
+                    style={{ textAlign: 'left', paddingTop:'15px'}}>
                     <p
                         style={{ fontSize: '20px', fontWeight: 'bold', marginRight: '60px', paddingLeft: '15px' }}
                         className='d-inline-block'
                     >FILTER</p>
 
-                    <p style={{ fontSize: '18px', fontWeight: 'bold', color: '#ff0066' }}
+                    <p style={{ fontSize: '18px', fontWeight: 'bold', color: '#ff0066', cursor:'pointer' }}
                         className='d-inline-block'
                         onClick={() => {setbrandFilter('')}}
                     >CLEAR ALL</p>
