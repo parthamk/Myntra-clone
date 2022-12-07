@@ -1,5 +1,5 @@
 .menuitems{
-    width: fit-content;
+    width: 600px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -18,4 +18,5 @@
     color: black;
     padding-left: 15px;
     padding-right: 15px;
+    text-transform: uppercase;
 }

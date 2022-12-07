@@ -12,7 +12,7 @@ function Menu() {
   return (
     <>
         <ul className="menuitems">
-          <li><NavLink to="/productpage">Men</NavLink></li>
+          <li><NavLink to="/products">Men</NavLink></li>
           <li><NavLink to="/">Women</NavLink></li>
           <li><NavLink to="/">Kid</NavLink></li>
           <li><NavLink to="/">Home & Living</NavLink></li>

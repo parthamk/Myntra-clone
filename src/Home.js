@@ -5,9 +5,10 @@ import HomeSlider from "./home/HomeSlider"
 function Home() {
   return (
     <div>
-        <Header />
-        <HomeSlider />
-        <div className="home-page">  
+       
+        <div className="home-page"> 
+          <Header />
+          <HomeSlider /> 
         </div>
     </div>
   )

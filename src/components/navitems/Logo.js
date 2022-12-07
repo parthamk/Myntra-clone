@@ -6,7 +6,7 @@ import {NavLink} from "react-router-dom";
 function Logo() {
 
   return (
-    <div className='logoWrap'>
+    <div>
         <NavLink to="/"><img src={LogoMain} alt="Logo" className='icon-holder'/></NavLink>
     </div>
 

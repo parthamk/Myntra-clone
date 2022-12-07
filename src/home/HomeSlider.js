@@ -36,13 +36,3 @@ function HomeSlider() {
 }
 
 export default HomeSlider
-
-
-
-
-
-// export const Carousel1 = () => {
-//    return (
-
-//    );
-// };
