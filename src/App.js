@@ -1,25 +1,23 @@
-import React from "react";
-import "./App.css";
-import Cards from "./components/Product/Cards";
-import Pdata from "./components/Product/Pdata";
-import Navbar from "./components/Navbar/Navbar.jsx";
-import Filter from "./components/Filter/Filter.jsx";
-import Sort from "./components/Sort/Sort.jsx";
-import { Route, Routes } from "react-router-dom";
-import Details from "./components/DetailsPage/Details";
-import HomePage from "./components/Product/HomePage";
+import './App.css';
+import {BrowserRouter as  Router, Routes, Route} from "react-router-dom";
+import Home from './Home';
+import ProductPage from './ProductPage';
+import SingleProduct from './SingleProduct';
+import ErrorPage from './ErrorPage';
+import SearchPage from './SearchPage';
 
-const App = () => {
+function App() {
   return (
-    <>
-      <Navbar />
+    <Router>
       <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/details/:detailslug" element={<Details/>} />
+        <Route path='/' element={<Home />}/>
+        <Route path='/productpage' element={<ProductPage />}/>
+        <Route path='/singleproduct/:id' element={<SingleProduct />}/>
+        <Route path='/SearchPage' element={<SearchPage />}/>
+        <Route path='*' element={<ErrorPage />}/>
       </Routes>
-
-    </>
+    </Router>
   );
-};
+}
 
 export default App;
