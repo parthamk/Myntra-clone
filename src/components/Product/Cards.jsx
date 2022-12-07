@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Images from "../Images";
 import "../../helper.css";
 import Pdata from "./Pdata";
