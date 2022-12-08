@@ -1,18 +1,20 @@
 import React from "react";
-import Breadcrums from "./Breadcrums";
 import "./Details.css";
 import Style from "../../helper.css"
+import Breadcrums from "../DetailsPage/Breadcrums";
 import ProductImages from "./ProductImages";
 import ProductDetails from "./ProductDetails";
 import { useParams } from "react-router-dom";
-import Pdata from "../product/Pdata";
+import Pdata from "../Product/Pdata";
+import Header from "../Header";
 
 const Details = () => {
 
   const { detailslug } = useParams();
-  // console.log(detailslug);
+  console.log(detailslug);
   return (
     <>
+      <Header />
       {
         Pdata.map((value, index) => {
 

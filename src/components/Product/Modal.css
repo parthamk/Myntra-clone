@@ -1,11 +1,12 @@
 .modal-wrapper{
 	top: 80px;
     bottom: 43px;
-    right: 178px;
-    left: 200px;
+    right: 10px;
+	/* width: 100px; */
+    /* left: 0px; */
     position: fixed;
-    /* height: 100vh; */
-    /* width: 100vw; */
+    /* height: 60vh; */
+    width: 30vw;
     background: #ccc;
     z-index: 99;
 }
@@ -18,7 +19,7 @@
 	font-size: 22px;
 }
 .inner-head{
-	width: 100%;
+	width: 100% fit-content;
 	height: 50px;
 	background-color: rgba(255, 63, 108, .8);
 }
@@ -29,11 +30,43 @@
 	background-color: #fff;
 }
 .inner-product-image {
-		width: 233px;
-		height: 280px;
+		width: 100vw;
+		height: 100vh;
 	}
 	.inner-card-info h3,
 	p {
 		margin: 2px;
 
+	}
+
+
+	.popcard-wrapper{
+		display: flex;
+		flex-direction: row;
+		padding-top: 10px;
+		font-size: 11px;
+	}
+
+	.popcard-bg-wrapper{
+		background-color: white;
+		padding: 5px;
+		width: 97%;
+	}
+
+	.popcart-product-image{
+		width: 70px;
+	}
+	.popcard-info-wrap{
+		flex-direction: column;
+		padding: 3px;
+		padding-left: 10px;
+	}
+	.popcard-info{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.popcart-right-content{
+		overflow-y: auto;
+		max-height: 60vh;
 	}

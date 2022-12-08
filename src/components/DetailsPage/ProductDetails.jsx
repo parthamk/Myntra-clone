@@ -3,12 +3,12 @@ import Style from "./ProductDetails.css";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addToCart,
-  addToWishlist,
-  removeFromWishList,
+  // addToWishlist,
+  // removeFromWishList,
 } from "../../redux/features/data";
 
 const ProductDetails = (props) => {
-  const wishlistData = useSelector((state) => state.appData.value.wishlist);
+  // const wishlistData = useSelector((state) => state.appData.value.wishlist);
   const dispatch = useDispatch();
   return (
     <>

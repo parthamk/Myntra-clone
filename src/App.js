@@ -5,6 +5,7 @@ import Products from './Products';
 // import SingleProduct from './SingleProduct';
 import ErrorPage from './ErrorPage';
 // import SearchPage from './SearchPage';
+import Details from './components/DetailsPage/Details';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/products' element={<Products />}/>
-        {/* <Route path='/singleproduct/:id' element={<SingleProduct />}/> */}
+        <Route path='/details/:detailslug' element={<Details />}/>
         {/* <Route path='/SearchPage' element={<SearchPage />}/> */}
         <Route path='*' element={<ErrorPage />}/>
       </Routes>
