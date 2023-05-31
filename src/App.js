@@ -11,8 +11,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/products' element={<Products />}/>
+      {/*<Route path='/' element={<Home />}/>*/}
+      {/*<Route path='/products' element={<Products />}/>*/}
+        <Route path='/' element={<Products />}/>
         <Route path='/details/:detailslug' element={<Details />}/>
         {/* <Route path='/SearchPage' element={<SearchPage />}/> */}
         <Route path='*' element={<ErrorPage />}/>
